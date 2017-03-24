@@ -92,4 +92,4 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### License
 
-Copyright (c) 2016 Copyright Dan Lauby All Rights Reserved.
+Copyright (c) 2017 Copyright Dan Lauby All Rights Reserved.
