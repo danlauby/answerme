@@ -1,5 +1,5 @@
 {{#if addNewAnswer}}
-<h1>New Review</h1>
+<h1>New Answer</h1>
   <div>
     <form>
       <div class="form-group">
@@ -11,11 +11,11 @@
         <label for="rating">Answer:</label>
         {{input value=content id="content"}}
       </div>
-    
+
 
         <button {{action 'saveAnswer'}} class="btn btn-success">Save</button>
       </form>
       <button {{action 'toggleAnswerForm'}} class="btn btn-warning">Hide Form</button>
       </div>{{else}}
-      <button {{action 'toggleAnswerForm'}} class="btn btn-success">New Answer</button>
+      <button {{action 'toggleAnswerForm'}} class="btn btn-danger">New Answer</button>
       {{/if}}

@@ -17,10 +17,10 @@
         {{textarea value=notes id="notes" placeholder=question.notes}}
       </div>
 
-      <button {{action 'update' question}}>Save</button>
+      <button {{action 'update' question}} class="btn btn-success">Save</button>
     </form>
   </div>
-  <button {{action 'toggleQuestionUpdateForm'}} class="btn btn-success">Hide Form</button>
+  <button {{action 'toggleQuestionUpdateForm'}} class="btn btn-warning">Hide Form</button>
 {{else}}
 <button {{action 'toggleQuestionUpdateForm'}} class="btn btn-warning">Edit</button>
 {{/if}}
