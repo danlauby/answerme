@@ -1,0 +1,18 @@
+{
+  "questions": [{
+    "author": "Sam Gottaquestion",
+    "question": "What is the true meaning of life?",
+    "notes": "In outer space"
+    }, {
+      "author": "Con Fused",
+      "content": "Where am I?",
+      "notes": "Nowhere"
+    }],
+  "answers": [{
+    "author": "Tim Troller",
+    "answer": "Stay lost loser!"
+    }, {
+    "author": "Angry Bob",
+    "answer": "Don't even bother..."
+      }]
+}
