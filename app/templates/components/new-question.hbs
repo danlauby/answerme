@@ -1,4 +1,4 @@
-{{#if addNewQuestion}}
+{{#if newQuestionFormShowing}}
 <h1>New Question</h1>
   <div>
     <form>
@@ -19,6 +19,7 @@
 
       <button {{action 'saveQuestion'}} class="btn btn-success">Save</button>
     </form>
+    <button {{action 'toggleQuestionForm'}} class="btn btn-warning">Hide Form</button>
   </div>{{else}}
-  <button {{action 'questionFormShow'}} class="btn btn-success">New Question</button>
+  <button {{action 'toggleQuestionForm'}} class="btn btn-success">New Question</button>
 {{/if}}

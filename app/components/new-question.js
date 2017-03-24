@@ -1,11 +1,15 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  addNewQuestion: false,
-  actions: {
-    questionFormShow() {
-      this.set('addNewQuestion', true);
-    },
+  newQuestionFormShowing: false,
+actions: {
+  toggleQuestionForm: function() {
+    if (!this.newQuestionFormShowing) {
+      this.set('newQuestionFormShowing', true);
+    } else {
+      this.set('newQuestionFormShowing', false);
+    }
+  },
 
     saveQuestion() {
       var params = {
