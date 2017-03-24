@@ -1,11 +1,11 @@
 {
   "questions": [{
     "author": "Sam Gottaquestion",
-    "question": "What is the true meaning of life?",
+    "content": "What is the true meaning of life?",
     "notes": "In outer space"
     }, {
       "author": "Con Fused",
-      "question": "Where am I?",
+      "content": "Where am I?",
       "notes": "Nowhere"
     }],
   "answers": [{

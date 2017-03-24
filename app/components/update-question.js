@@ -13,10 +13,10 @@ import Ember from 'ember';
       update(question) {
         var params = {
           author: this.get('author'),
-          question: this.get('question'),
+          content: this.get('content'),
           notes: this.get('notes'),
         };
-        this.set('updaQuestionForm', false);
+        this.set('updateQuestionForm', false);
         this.sendAction('update', question, params);
       }
     }

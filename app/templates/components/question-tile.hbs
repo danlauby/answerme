@@ -1,11 +1,13 @@
 <div class="question">
-  <h3 {{action 'toggleContent'}}>Question: {{question.question}}</h3>
+  <h3 {{action 'toggleContent'}}>Question: {{question.content}}</h3>
 
   {{#if questionContentShowing}}
     <p>Additional Notes: {{question.notes}}</p>
     <h4>Author: {{question.author}}</h4>
-    <button class="btn btn-warning">Edit</button>
+
+      {{update-question question=question update="update"}}
+      <!-- {{#link-to 'entry' post.id}}Read Answers...{{/link-to}} -->
+
   {{/if}}
-  {{update-question question=question update="update"}}
 </div>
 <hr>
