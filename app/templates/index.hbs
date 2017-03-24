@@ -1,1 +1,10 @@
-{{outlet}}
+<h2>Questions:</h2>
+
+
+  {{#each model as |question|}}
+  <div class="well">
+    <h3>Question: {{question.question}}</h3>
+    <p>Additional Notes: {{question.notes}}</p>
+    <h4>Author: {{question.author}}</h4>
+  </div>
+  {{/each}}
