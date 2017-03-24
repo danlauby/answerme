@@ -1,6 +1,14 @@
-{{#each model as |question|}}
+{{#each model.questions as |question|}}
   <h3>{{question-tile question=question update="update"}}</h3>
 {{/each}}
 
 
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.content}} - by {{answer.author}}</li>
+  {{/each}}
+</ul>
+
+
 {{new-question saveQuestion="saveQuestion"}}
+{{new-answer saveAnswer="saveAnswer" question=model}}

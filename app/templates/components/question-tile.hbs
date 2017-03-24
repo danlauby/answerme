@@ -7,7 +7,14 @@
 
       {{update-question question=question update="update"}}
       <!-- {{#link-to 'entry' post.id}}Read Answers...{{/link-to}} -->
-
+      {{#each model.question.answers as |answer|}}
+        <div class="col-md-12">
+          <div class="well">
+            <p>Comment by {{answer.content}}</p>
+            <p>-by {{answer.author}}</p>
+          </div>
+        </div>
+      {{/each}}
   {{/if}}
 </div>
 <hr>
