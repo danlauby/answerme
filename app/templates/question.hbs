@@ -1,0 +1,10 @@
+<div class="panel">
+  <h2>{{model.author}}'s question:</h2>
+
+  {{update-question question=model update="update"}}
+
+  {{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
+
+  {{new-answer saveAnswer="saveAnswer" question=model}}
+
+</div>
