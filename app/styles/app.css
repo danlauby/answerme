@@ -1,0 +1,50 @@
+/*font-family: 'Jim Nightshade', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Delius Unicase', cursive;*/
+
+body {
+  background-image: url('/assets/img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron, footer {
+  text-align: center;
+  background-color: rgb(32, 19, 15);
+  color: #FFF;
+}
+
+footer {
+  padding: 15px;
+}
+
+.well, .panel {
+  background-color: rgba(175, 183, 187, 0.7);
+  padding: 30px;
+}
+
+.jumbotron h1 {
+  font-family: monospace;
+  font-size: 80px;
+}
+
+a {
+  color: rgb(166, 10, 34);
+font-family: 'Jim Nightshade', cursive;
+}
+
+a:hover {
+  color: rgb(30, 32, 28);
+}
+
+h2 {
+font-family: 'Jim Nightshade', cursive;}
+
+h3 {
+  color: rgb(30, 32, 28);
+  font-family: 'Delius Unicase', cursive;
+}
+
+p {
+  color: rgb(66, 62, 64);
+}
