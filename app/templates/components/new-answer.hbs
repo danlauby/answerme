@@ -1,5 +1,5 @@
 {{#if addNewAnswer}}
-<h1>New Answer</h1>
+<h2>My Answer:</h2>
   <div>
     <form>
       <div class="form-group">
@@ -17,5 +17,5 @@
       </form>
       <button {{action 'toggleAnswerForm'}} class="btn btn-warning">Hide Form</button>
       </div>{{else}}
-      <button {{action 'toggleAnswerForm'}} class="btn btn-danger">New Answer</button>
+      <button {{action 'toggleAnswerForm'}} class="btn btn-success">answerMe!</button>
       {{/if}}
