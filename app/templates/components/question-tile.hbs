@@ -1,18 +1,1 @@
-<div class="question">
-  <ul>
-    {{#each model.answers as |answer|}}
-      <li>{{answer.content}} - by {{answer.author}}</li>
-    {{/each}}
-  </ul>
-  <h3 {{action 'toggleContent'}}>Question: {{question.content}}</h3>
-
-  {{#if questionContentShowing}}
-    <p>Additional Notes: {{question.notes}}</p>
-    <h4>Author: {{question.author}}</h4>
-
-      {{update-question question=question update="update"}}
-      {{#link-to 'entry' post.id}}Read Answers...{{/link-to}}
-
-  {{/if}}
-</div>
-<hr>
+<p>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</p>

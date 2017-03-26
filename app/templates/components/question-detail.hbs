@@ -1,0 +1,14 @@
+<h3>Question: {{question.content}}</h3>
+<p>Additional Notes: {{question.notes}}</p>
+<p>Author: {{question.author}}</p>
+<button {{action 'delete' question}} class="btn btn-danger">Delete Question</button>
+<br>
+
+
+
+<h2>Answers</h2>
+<div class="well">
+  {{#each question.answers as |answer|}}
+    <h4>{{answer-tile answer=answer}}</h4><hr>
+  {{/each}}
+</div>
