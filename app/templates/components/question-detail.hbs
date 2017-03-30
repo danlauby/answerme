@@ -7,8 +7,10 @@
 
 
 <h2>Answers</h2>
+{{#if question.answers}}
 <div id="answerWell" class="well">
   {{#each question.answers as |answer|}}
     <h4>{{answer-tile answer=answer}}</h4><hr>
   {{/each}}
 </div>
+{{/if}}
