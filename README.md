@@ -33,12 +33,7 @@ You will need the following things properly installed on your computer.
     * jQuery
     * Bootstrap
 
-  * 2. Application Specifications
-
-    | Behavior | Input | Output |
-    |----------|-------|--------|
-
- 3. Integration
+ 2. Integration
 
   |Route(s)|Template(s)|Component(s)|
   |--------|-----------|------------|
@@ -51,7 +46,7 @@ You will need the following things properly installed on your computer.
   * Integrate feature that allows user to add, update and delete a question.
   * Integrate feature that allows user(s) to answer a question.
 
-4. UX/UI
+3. UX/UI
   * Include and modify bootstrap.
   * Develop custom style
 
@@ -81,14 +76,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 * `ember build` (development)
 * `ember build --environment production` (production)
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
 ### License
 
