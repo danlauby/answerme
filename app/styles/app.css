@@ -2,6 +2,14 @@
 font-family: 'Poppins', sans-serif;
 font-family: 'Delius Unicase', cursive;*/
 
+html, body {
+    height: 100%;
+}
+
+html .container {
+  min-height: 100%;
+}
+
 body {
   background-image: url('/assets/img/background.jpg');
   background-repeat: no-repeat;
@@ -31,6 +39,7 @@ footer {
 a {
   color: rgb(166, 10, 34);
 font-family: 'Jim Nightshade', cursive;
+font-size: 40px;
 }
 
 a:hover {
@@ -48,3 +57,7 @@ h3 {
 p {
   color: rgb(66, 62, 64);
 }
+
+/*#answerWell {
+  display: none;
+}*/

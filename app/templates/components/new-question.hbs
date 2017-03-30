@@ -1,23 +1,23 @@
 {{#if newQuestionFormShowing}}
 <h1>New Question</h1>
   <div>
-    <form>
+    <form {{action 'saveQuestion' on='submit'}}>
       <div class="form-group">
         <label for="owner">Author:</label>
-        {{input value=author id="author"}}
+        {{input value=author id="author" required='required'}}
       </div>
 
       <div class="form-group">
         <label for="type">Question:</label>
-        {{input value=content id="content"}}
+        {{input value=content id="content" required='required'}}
       </div>
 
       <div class="form-group">
         <label for="city">Additional Notes:</label>
-        {{textarea value=notes id="notes"}}
+        {{textarea value=notes id="notes" required='required'}}
       </div>
 
-      <button {{action 'saveQuestion'}} class="btn btn-success">Save</button>
+      <button class="btn btn-success">Save</button>
     </form>
     <button {{action 'toggleQuestionForm'}} class="btn btn-warning">Hide Form</button>
   </div>{{else}}

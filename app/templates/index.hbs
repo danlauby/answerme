@@ -1,9 +1,7 @@
 <h2>Questions:</h2>
-
 <div class="well">
   {{#each model.questions as |question|}}
     <h3>{{question-tile question=question}}</h3><hr>
   {{/each}}
 </div>
-
 {{new-question saveQuestion="saveQuestion"}}

@@ -1,19 +1,19 @@
 {{#if addNewAnswer}}
 <h2>My Answer:</h2>
   <div>
-    <form>
+    <form {{action 'saveAnswer' on='submit'}}>
       <div class="form-group">
         <label for="author">Author:</label>
-        {{input value=author id="author"}}
+        {{input value=author id="author" required="required"}}
       </div>
       <div class="form-group">
 
         <label for="rating">Answer:</label>
-        {{input value=content id="content"}}
+        {{input value=content id="content" required="required"}}
       </div>
 
 
-        <button {{action 'saveAnswer'}} class="btn btn-success">Save</button>
+        <button class="btn btn-success">Save</button>
       </form>
       <button {{action 'toggleAnswerForm'}} class="btn btn-warning">Hide Form</button>
       </div>{{else}}
