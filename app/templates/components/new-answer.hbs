@@ -4,18 +4,18 @@
     <form {{action 'saveAnswer' on='submit'}}>
       <div class="form-group">
         <label for="author">Author:</label>
-        {{input value=author id="author" required="required"}}
+        {{input value=author id="author" required="required" class="form-control"}}
       </div>
       <div class="form-group">
 
         <label for="rating">Answer:</label>
-        {{input value=content id="content" required="required"}}
+        {{textarea value=content id="content" required="required" class="form-control"}}
       </div>
 
 
         <button class="btn btn-success">Save</button>
-      </form>
+      </form><br>
       <button {{action 'toggleAnswerForm'}} class="btn btn-warning">Hide Form</button>
-      </div>{{else}}
+    </div>{{else}}
       <button {{action 'toggleAnswerForm'}} class="btn btn-success">answerMe!</button>
       {{/if}}

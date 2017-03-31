@@ -4,17 +4,17 @@
     <form {{action 'saveQuestion' on='submit'}}>
       <div class="form-group">
         <label for="owner">Author:</label>
-        {{input value=author id="author" required='required'}}
+        {{input value=author id="author" required='required' class="form-control"}}
       </div>
 
       <div class="form-group">
         <label for="type">Question:</label>
-        {{input value=content id="content" required='required'}}
+        {{input value=content id="content" required='required' class="form-control"}}
       </div>
 
       <div class="form-group">
         <label for="city">Additional Notes:</label>
-        {{textarea value=notes id="notes" required='required'}}
+        {{textarea value=notes id="notes" required='required' class="form-control"}}
       </div>
 
       <button class="btn btn-success">Save</button>

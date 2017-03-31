@@ -16,34 +16,49 @@ body {
   background-size: cover;
 }
 
-.jumbotron, footer {
+p {
+  color: black;
+}
+
+.header {
   text-align: center;
   background-color: rgb(32, 19, 15);
   color: #FFF;
+  padding: 20px;
 }
 
-footer {
-  padding: 15px;
-}
-
-.well, .panel {
-  background-color: rgba(175, 183, 187, 0.7);
-  padding: 30px;
-}
-
-.jumbotron h1 {
+.header h1 {
   font-family: monospace;
   font-size: 80px;
 }
 
+.container {
+  background-color: rgba(175, 183, 187, 0.7);
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.panel {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgba(175, 183, 187, 0.7);
+}
+
+
 a {
   color: rgb(166, 10, 34);
   font-family: monospace;
-font-size: 40px;
+  font-size: 30px;
 }
 
 a:hover {
-  color: rgb(30, 32, 28);
+  color: rgb(166, 70, 8);
+}
+
+.header a:hover {
+  font-size: 30px;
+  color: rgb(245, 94, 67);
 }
 
 h2 {
@@ -52,14 +67,11 @@ color: rgb(54, 3, 3);
 }
 
 h3 {
-  color: rgb(30, 32, 28);
+  color: rgb(20, 22, 19);
   font-family: 'Delius Unicase', cursive;
 }
 
 p {
   color: rgb(66, 62, 64);
+  font-family: 'Poppins', sans-serif;rgb(11, 11, 10)
 }
-
-/*#answerWell {
-  display: none;
-}*/
